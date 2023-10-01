@@ -36,6 +36,16 @@ footer {
 img { 
 	padding: 1em; 
 }
+#AboutMeImg {
+  width: 20%;
+  height: auto;
+}
+.aboutMe{
+  display: flex;
+}
+.aboutMeText{
+  margin-left: 20px;
+}
 h2 {
 	color: #08D1D9;
 }
