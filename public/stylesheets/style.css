@@ -77,10 +77,7 @@ nav a:hover {
 nav a:visited {
 	color:#FFFFFF;
 }
-nav #page { 
-	font-weight: bold;
-      color: #FEFEFE; 
-}
+
 header, nav, main, footer, aside, figure { 
 	display: block; 
 }
