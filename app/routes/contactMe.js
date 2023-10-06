@@ -8,4 +8,8 @@ router.get('/', function(req, res){
     });
 });
 
+router.post('/submitContactForm', function(req, res) {
+    res.redirect('/');
+});
+
 module.exports = router;
