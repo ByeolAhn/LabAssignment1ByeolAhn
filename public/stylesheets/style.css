@@ -7,16 +7,16 @@ body {
 	background-color: #CCCCCC;
 }
 #wrapper {
-	background-color: #5E2BB8;
+	background-color: #36333c;
 }
 header {
 	color: #000000;
 	background-color: #ffffff;
-	background-image: url(./ProjectPictures/hanatourLogo.gif);
+	background-image: url(/images/logo.jpg);
 	background-repeat: no-repeat;
 	background-size: auto 100%;
 	padding: .5em 0 .5em 5.5em;
-    border-bottom: #5E2BB8 1px solid;
+    border-bottom: #36333c 1px solid;
 }
 main {   
 	background-color: #FFFFFF;
@@ -27,7 +27,7 @@ aside {
 	text-align: center; 
 }
 footer {
-	background-color: #08D1D9;
+	background-color: #909090;
 	font-size: 70%;
 	text-align: center;
 	padding: 0.5em 0;
@@ -47,7 +47,7 @@ img {
   margin-left: 20px;
 }
 h2 {
-	color: #08D1D9;
+	color: #909090;
 }
 .floatRight{
 	float:right;
@@ -69,10 +69,10 @@ nav a {
 		font-weight: bold;
 }
 nav a:link {
-	color: #08D1D9;
+	color: #909090;
 }
 nav a:hover {
-	color: #08D1D9;
+	color: #909090;
 }
 nav a:visited {
 	color:#FFFFFF;
@@ -86,13 +86,13 @@ h3 a {
 		font-weight: bold;
 }
 h3 a:link {
-	color: #08D1D9;
+	color: #909090;
 }
 h3 a:hover {
-	color: #08D1D9;
+	color: #909090;
 }
 h3 a:visited {
-	color:#5E2BB8;
+	color:#36333c;
 }
 @media (min-width: 600px) {
 	#wrapper { 
