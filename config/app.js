@@ -1,3 +1,4 @@
+/* app.js in config folder Byeol Ahn 301288852 Oct 7th 2023 */
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
