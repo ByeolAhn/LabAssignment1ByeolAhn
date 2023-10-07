@@ -4,11 +4,20 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next){
-  res.render('test',
+  res.render('home',
   {
       title: 'ByeolAhn Portfolio'
   });
 });
+
+/* GET contact me page. */
+router.get('/contactMe', function(req, res){
+  res.render('contact',
+  {
+      title: 'ContactByeolAhn'
+  });
+});
+
 
 
 module.exports = router;
