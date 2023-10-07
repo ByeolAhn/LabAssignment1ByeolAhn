@@ -2,24 +2,48 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', 
-  { 
-    title: 'Express' 
-  }
-  );
-});
-
-router.get('/about', function(req, res, next) {
-  res.render('index', { title: 'About' });
-});
-
-router.get('/products', function(req, res, next) {
-  res.render('products', 
-  { 
-    product: 'Products',
-    title: 'Phone'
+router.get('/', function(req, res){
+  res.render('homePage',
+  {
+      title: 'ByeolAhn Portfolio'
   });
 });
-//
+
+/* GET about me page. */
+router.get('/', function(req, res){
+  res.render('aboutMe',
+  {
+      title: 'AboutByeolAhn'
+  });
+});
+
+/* GET projects page. */
+router.get('/', function(req, res){
+  res.render('projectsPage',
+  {
+      title: 'Projects by Byeol Ahn'
+  });
+});
+
+/* GET services page. */
+router.get('/', function(req, res){
+  res.render('servicesPage',
+  {
+      title: 'Services by Byeol Ahn'
+  });
+});
+
+
+/* GET contact me page. */
+router.get('/', function(req, res){
+  res.render('contactMe',
+  {
+      title: 'ContactByeolAhn'
+  });
+});
+
+router.post('/submitContactForm', function(req, res) {
+  res.redirect('/');
+});
+
 module.exports = router;

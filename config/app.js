@@ -4,13 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('../app/routes/index');
-var usersRouter = require('../app/routes/users');
-var homePageRouter = require('../app/routes/homePage');
-var aboutMeRouter = require('../app/routes/aboutMe');
-var projectsPageRouter = require('../app/routes/projectsPage');
-var servicesPageRouter = require('../app/routes/servicesPage');
-var contactMeRouter = require('../app/routes/contactMe');
+var allRouter = require('../app/routes/index');
 
 
 var app = express();
@@ -25,13 +19,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../public')));
 
-app.use('/index', indexRouter);
-app.use('/users', usersRouter);
-app.use('/', homePageRouter);
-app.use('/aboutMe', aboutMeRouter);
-app.use('/projectsPage', projectsPageRouter);
-app.use('/servicesPage', servicesPageRouter);
-app.use('/contactMe', contactMeRouter);
+
+app.use('/', allRouter);
+
 
 
 
