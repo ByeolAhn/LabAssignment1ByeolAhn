@@ -18,6 +18,7 @@ router.get('/contactMe', function(req, res){
   });
 });
 
+/* GET about me page. */
 router.get('/aboutMe', function(req, res){
   res.render('about',
   {
@@ -33,6 +34,7 @@ router.get('/projectsPage', function(req, res){
   });
 });
 
+/* GET services page. */
 router.get('/servicesPage', function(req, res){
   res.render('services',
   {
@@ -40,7 +42,7 @@ router.get('/servicesPage', function(req, res){
   });
 });
 
-
+/* POST request to handle form submission from the 'Contact Me' page and redirect to the home page */
 router.post('/submitContactForm', function(req, res) {
   res.redirect('/');
 });
