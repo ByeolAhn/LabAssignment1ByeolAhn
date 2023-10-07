@@ -11,7 +11,7 @@ router.get('/', function(req, res){
 });
 
 /* GET about me page. */
-router.get('/', function(req, res){
+router.get('/aboutMe', function(req, res){
   res.render('aboutMe',
   {
       title: 'AboutByeolAhn'
@@ -19,7 +19,7 @@ router.get('/', function(req, res){
 });
 
 /* GET projects page. */
-router.get('/', function(req, res){
+router.get('/projectsPage', function(req, res){
   res.render('projectsPage',
   {
       title: 'Projects by Byeol Ahn'
@@ -27,7 +27,7 @@ router.get('/', function(req, res){
 });
 
 /* GET services page. */
-router.get('/', function(req, res){
+router.get('/servicesPage', function(req, res){
   res.render('servicesPage',
   {
       title: 'Services by Byeol Ahn'
@@ -36,13 +36,14 @@ router.get('/', function(req, res){
 
 
 /* GET contact me page. */
-router.get('/', function(req, res){
+router.get('/contactMe', function(req, res){
   res.render('contactMe',
   {
       title: 'ContactByeolAhn'
   });
 });
 
+/* POST request to handle form submission from the 'Contact Me' page and redirect to the home page */
 router.post('/submitContactForm', function(req, res) {
   res.redirect('/');
 });
