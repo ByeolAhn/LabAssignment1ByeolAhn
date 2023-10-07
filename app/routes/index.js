@@ -18,6 +18,32 @@ router.get('/contactMe', function(req, res){
   });
 });
 
+router.get('/aboutMe', function(req, res){
+  res.render('about',
+  {
+      title: 'AboutByeolAhn'
+  });
+});
+
+/* GET projects page. */
+router.get('/projectsPage', function(req, res){
+  res.render('projects',
+  {
+      title: 'Projects by Byeol Ahn'
+  });
+});
+
+router.get('/servicesPage', function(req, res){
+  res.render('services',
+  {
+      title: 'Services by Byeol Ahn'
+  });
+});
+
+
+router.post('/submitContactForm', function(req, res) {
+  res.redirect('/');
+});
 
 
 module.exports = router;
