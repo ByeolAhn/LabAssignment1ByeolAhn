@@ -8,7 +8,8 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 // import routes
-var allRouter = require('../app/routes/index');
+
+var indexRouter = require('../app/routes/index');
 
 // initialize express app
 var app = express();
@@ -25,7 +26,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../public')));
 
 // use routes from allRouter
-app.use('/', allRouter);
+app.use('/', indexRouter);
 
 
 
