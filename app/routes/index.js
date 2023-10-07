@@ -4,7 +4,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res){
-  res.render('homePage',
+  res.render('/homePage',
   {
       title: 'ByeolAhn Portfolio'
   });
@@ -12,7 +12,7 @@ router.get('/', function(req, res){
 
 /* GET about me page. */
 router.get('/aboutMe', function(req, res){
-  res.render('aboutMe',
+  res.render('/aboutMe',
   {
       title: 'AboutByeolAhn'
   });
